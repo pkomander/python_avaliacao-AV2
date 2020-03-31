@@ -68,13 +68,10 @@ if pergunta == 4:
     soma = 0
 
     while posicao <= fim:
-        fim = len(num)
-        number = int(num[posicao])
+        if int(num[posicao]) % 2 != 0:
+            soma+= int(num[posicao])
         posicao+=1
-        if (number % 2 != 0):
-            soma+=number
-            posicao+=1
-            print (number + number)
+        print (soma)
 
         elif number % 2 == 0:
             print ('Todos os numeros sao par')
