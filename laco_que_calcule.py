@@ -66,6 +66,7 @@ if pergunta == 4:
     num = (input('Digite um numero: '))
     fim = len(num)
     soma = 0
+    posicao = 0
 
     while posicao <= fim:
         if int(num[posicao]) % 2 != 0:
